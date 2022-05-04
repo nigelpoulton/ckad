@@ -21,6 +21,12 @@ Run the following command to change into the correct directory. The tasks expect
 $ cd ckad/1\ Application\ Design\ and\ Build/1\ Define\ build\ and\ modify\ container\ images/code/images/
 ```
 
+**NOTE:** This will set a very long working directory. If this bothers you (it bothers me) you can tell Linux just to display your current directory without the path by running this command. It will only change your prompt for your current shell session.
+
+```
+$ PS1="\W\$ "
+```
+
 ## Help and answers
 
 You can use each tool's built-in documentation for help. This is also allowed in the exam. For example:
