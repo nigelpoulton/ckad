@@ -18,7 +18,7 @@ $ git clone https://github.com/nigelpoulton/ckad.git
 Run the following command to change into the correct directory. The tasks expect your terminal to be in this directory. If it isn't, the answers won't work.
 
 ```
-$ cd cd ckad/1\ Application\ Design\ and\ Build/1\ Define\ build\ and\ modify\ container\ images/code/images/
+$ cd ckad/1\ Application\ Design\ and\ Build/1\ Define\ build\ and\ modify\ container\ images/code/images/
 ```
 
 ## Help and answers
