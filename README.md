@@ -7,6 +7,8 @@ The repo is orgainsed as follows:
 - Each course (exam domain/competency) has its own folder
 - All info and materials for each course will go in the course's folder and sub-folders
 
+## Pull requests
+
 I **won't** be accept PRs for additional content. This is because the content relates to the Pluralsight video courses.
 
 I **will** accept PRs for typos and other errata.
