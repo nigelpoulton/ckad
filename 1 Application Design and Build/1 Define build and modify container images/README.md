@@ -39,7 +39,7 @@ $ podman --help | podman <command> --help
 
 You're encouraged to work things out yourself, even if you use the internet. However, the only websites you can use in the exam are `kubernetes.io` and `helm.sh`.
 
-Answers to each task can be found in the `answers` file, but 
+Answers to each task can be found in the `answers.md` file, but 
 
 ### Task 1
 
