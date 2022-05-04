@@ -1,0 +1,21 @@
+# Test web-app to use with Pluralsight CKAD course
+# Linux x64
+FROM ubuntu
+
+LABEL maintainer="nigelpoulton@hotmail.com"
+
+# Install Node and NPM
+RUN apt-get update -y
+RUN apt-get -y install nodejs npm curl
+
+# Copy app to /src
+COPY . /src
+
+WORKDIR /src
+
+# Install dependencies
+RUN npm install
+
+EXPOSE 8080
+
+ENTRYPOINT ["node", "./app.js"]
