@@ -2,7 +2,7 @@
 
 Feel free to complete the following tasks in your own environment.
 
-## Pre-reqisites
+## Prerequisites
 
 You'll need the following:
 
