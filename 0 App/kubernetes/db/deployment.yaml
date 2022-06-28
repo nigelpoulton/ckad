@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: store-db
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: db
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+        - name: db
+          image: postgres
+          envFrom:
+            - configMapRef:
+                name: db-access
+          ports:
+            - containerPort: 5432
+        - name: adminer # sidecar postgres web ui
+          image: adminer
+          ports:
+            - containerPort: 8080

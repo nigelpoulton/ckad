@@ -1,0 +1,178 @@
+- model: product.Category
+  pk: 1
+  fields:
+    name: Clothing
+    slug: clothing
+- model: product.Category
+  pk: 2
+  fields:
+    name: Footwear
+    slug: footwear
+- model: product.Category
+  pk: 3
+  fields:
+    name: Equipment
+    slug: equipment
+- model: product.Category
+  pk: 4
+  fields:
+    name: Bags & Travel
+    slug: bags-travel
+- model: product.Category
+  pk: 5
+  fields:
+    name: Trail Reviews
+    slug: trail-reviews
+
+- model: product.Product
+  pk: 1
+  fields:
+    category: 1
+    name: Denim Jacket 1
+    slug: denim-jacket-1
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 2
+  fields:
+    category: 1
+    name: Denim Jacket 2
+    slug: denim-jacket-2
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 3
+  fields:
+    category: 1
+    name: Denim Jacket 3
+    slug: denim-jacket-3
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 4
+  fields:
+    category: 1
+    name: Denim Jacket 4
+    slug: denim-jacket-4
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 5
+  fields:
+    category: 1
+    name: Denim Jacket 5
+    slug: denim-jacket-5
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+
+- model: product.Product
+  pk: 6
+  fields:
+    category: 2
+    name: Denim Jacket 1
+    slug: denim-jacket-1
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 7
+  fields:
+    category: 2
+    name: Denim Jacket 2
+    slug: denim-jacket-2
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 8
+  fields:
+    category: 2
+    name: Denim Jacket 3
+    slug: denim-jacket-3
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 9
+  fields:
+    category: 2
+    name: Denim Jacket 4
+    slug: denim-jacket-4
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 10
+  fields:
+    category: 2
+    name: Denim Jacket 5
+    slug: denim-jacket-5
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+
+- model: product.Product
+  pk: 11
+  fields:
+    category: 3
+    name: Denim Jacket 1
+    slug: denim-jacket-1
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 12
+  fields:
+    category: 3
+    name: Denim Jacket 2
+    slug: denim-jacket-2
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 13
+  fields:
+    category: 3
+    name: Denim Jacket 3
+    slug: denim-jacket-3
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 14
+  fields:
+    category: 3
+    name: Denim Jacket 4
+    slug: denim-jacket-4
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11
+- model: product.Product
+  pk: 15
+  fields:
+    category: 3
+    name: Denim Jacket 5
+    slug: denim-jacket-5
+    description: This is a jacket
+    price: 24.49
+    image_url: https://picsum.photos/id/1005/200/300
+    date_added: 2011-11-11 16:52:11

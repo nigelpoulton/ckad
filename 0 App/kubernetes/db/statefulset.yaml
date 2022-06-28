@@ -1,0 +1,84 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  selector:
+    matchLabels:
+      app: db
+  serviceName: postgres
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: db
+    spec:
+      containers:
+        - name: adminer # sidecar postgres web ui
+          image: adminer
+          ports:
+            - containerPort: 8080
+        - name: postgres
+          image: postgres
+          imagePullPolicy: IfNotPresent
+        
+          ports:
+            - name: postgres
+              containerPort: 5432
+              protocol: TCP
+          
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+          
+          envFrom:
+            - configMapRef:
+                name: db-access
+
+          env:
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: status.podIP
+              
+          livenessProbe:
+            exec:
+              command:
+                - sh
+                - -c
+                - exec pg_isready --host $POD_IP
+            failureThreshold: 6
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+
+          readinessProbe:
+            exec:
+              command:
+                - sh
+                - -c
+                - exec pg_isready --host $POD_IP
+            failureThreshold: 3
+            initialDelaySeconds: 5
+            periodSeconds: 5
+            successThreshold: 1
+            timeoutSeconds: 3
+
+          volumeMounts:
+            - mountPath: /var/lib/postgresql/data/pgdata
+              name: postgres
+              subPath: postgres-db
+          
+  volumeClaimTemplates:
+  - metadata:
+      name: postgres
+    spec:
+      accessModes: ["ReadWriteOnce"]
+      resources:
+        requests:
+          storage: 200Mi 

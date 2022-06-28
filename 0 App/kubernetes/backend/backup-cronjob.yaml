@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: database-backup
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: pg-dump
+            image: postgres
+            envFrom:
+              - configMapRef:
+                  name: db-access
+            env:
+              - name: PGPASSWORD
+                valueFrom:
+                  configMapKeyRef:
+                    name: db-access
+                    key: POSTGRES_PASSWORD
+            command: ["/bin/sh"]
+            args: ["-c", 'pg_dump -U ${POSTGRES_USER} -h postgres ${POSTGRES_DB}']
+          restartPolicy: OnFailure

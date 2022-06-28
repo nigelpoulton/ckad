@@ -1,0 +1,20 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: migration-job
+spec:
+  ttlSecondsAfterFinished: 100
+  template:
+    spec:
+      containers:
+      - name: backend
+        envFrom:
+          - configMapRef:
+              name: db-access
+        env:
+          - name: DATABASE_URL
+            value: "postgresql://$(POSTGRES_USER):$(POSTGRES_PASSWORD)@postgres:5432/$(POSTGRES_DB)"
+        image: pluralsight_backend:latest
+        imagePullPolicy: Never # only for local testing
+        command: ["python",  "manage.py", "migrate"]
+      restartPolicy: Never

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: store-frontend
+  labels:
+    app: frontend
+spec:
+  containers:
+    - name: frontend
+      image: pluralsight_vue:latest
+      ports:
+        - containerPort: 8080

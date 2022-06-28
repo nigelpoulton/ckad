@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: store-frontend
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          env:
+            - name: API_URL
+              value: http://api.kubernetes.docker.internal
+          image: pluralsight_vue:latest
+          imagePullPolicy: Never # only for local testing
+          readinessProbe:
+            httpGet:
+              path: /
+              port: server
+          livenessProbe:
+            httpGet:
+              path: /
+              port: server
+          ports:
+            - name: server
+              containerPort: 8080
