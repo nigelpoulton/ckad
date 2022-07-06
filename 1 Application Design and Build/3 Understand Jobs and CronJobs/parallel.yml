@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parallel
+spec:
+  backoffLimit: 4
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+      - name: ctr
+        image: alpine:latest
+        command: ['sh', '-c', 'echo "Lets smash the CKAD" && sleep 25']
