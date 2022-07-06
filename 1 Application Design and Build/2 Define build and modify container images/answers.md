@@ -1,3 +1,9 @@
+# Answers
+
+The following lists each question and accompanying answer.
+
+Some answers include commands for `Buildah`, `Docker`, and `Podman`. Only use the commands for the tool you are using.
+
 ### Task 1
 
 
@@ -17,8 +23,6 @@ There is a typo in the Dockerfile (`Buildfiles/Containerfile1`).
 - `FROM ode:lts-alpine` should be `FROM node:lts-alpine`
 
 The command to build the image is any of the following:
-
-These assume the command is ran form the `Task-1` directory.
 
 ```
 buildah build -t ckad:pluralsight -f ./Buildfiles/Containerfile1 ./App
@@ -55,7 +59,7 @@ You must have completed Task 1 before attempting this one.
 
 The local `ckad:pluralsight` image is ready for production. Perform any tasks necessary so it can be pushed to the `nigelpoulton/ckad:prod` repository on Docker Hub.
 
-Once you've done this, delete the original `ckad:pluralsight` iamge, but do not delete the `nigelpoulton/ckad:prod` image.
+Once you've done this, delete the original `ckad:pluralsight` image, but do not delete the `nigelpoulton/ckad:prod` image.
 
 When you've completed the task, you should have the `nigelpoulton/ckad:prod` image on your local machine and the `ckad:pluralsight` should no longer be present.
 
@@ -69,8 +73,8 @@ docker image tag ckad:pluralsight nigelpoulton/ckad:prod
 podman image tag ckad:pluralsight nigelpoulton/ckad:prod
 
 buildah rmi ckad:pluralsight
-docker iamge rm ckad:pluralsight
-podman iamge rm ckad:pluralsight
+docker image rm ckad:pluralsight
+podman image rm ckad:pluralsight
 ```
 
 ### Task 4
@@ -81,58 +85,30 @@ Build an OCI container image using the `Dockerfile.dev` build file. Make sure th
 
 **Answer**
 
-Docker
-
 ```
-$ docker image build -t ckad:ps1 -f Dockerfile.dev .
-```
-
-Buildah
-```
-$ buildah build -t ckad:ps1 -f Dockerfile.dev
-```
-
-**Podman**
-```
-$ podman image build -t ckad:ps1 -f Dockerfile.dev .
+buildah build -t ckad:ps1 -f Dockerfile.dev
+docker image build -t ckad:ps1 -f Dockerfile.dev .
+podman image build -t ckad:ps1 -f Dockerfile.dev .
 ```
 
 ### Task 5
 
 Build an image called `ckad:ps2` using the default `Dockerfile` and tag it so it can be pushed to the `dev-fe` repo in the `internal-reg.io` registry.
 
-**Docker**
 ```
-$ docker image build -t internal-reg.io/dev-fe/ckad:ps2 .
-```
-
-**Buildah**
-```
-$ buildah build -t internal-reg.io/dev-fe/ckad:ps2 
-```
-
-**Podman**
-```
-$ podman image build -t internal-reg.io/dev-fe/ckad:ps2 .
+buildah build -t internal-reg.io/dev-fe/ckad:ps2 
+docker image build -t internal-reg.io/dev-fe/ckad:ps2 .
+podman image build -t internal-reg.io/dev-fe/ckad:ps2 .
 ```
 
 ### Task 6
 
 Download a local copy of the official `alpine` image with the `3.15.4` tag.
 
-**Docker**
 ```
-$ docker image pull alpine:3.15.4
-```
-
-**Buildah**
-```
-$ buildah pull alpine:3.15.4
-```
-
-**Podman**
-```
-$ docker image pull alpine:3.15.4
+buildah pull alpine:3.15.4
+docker image pull alpine:3.15.4
+docker image pull alpine:3.15.4
 ```
 
 ### Task 7
@@ -141,14 +117,9 @@ $ docker image pull alpine:3.15.4
 
 Create a tarball called `ckad-ps2.tar` from the local `ckad:ps2` image.
 
-**Docker**
 ```
-$ docker save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
-```
-
-**Podman**
-```
-$ podman save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
+docker save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
+podman save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
 ```
 
 ### Task 8
@@ -157,37 +128,18 @@ $ podman save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
 
 Delete the local `alpine:3.15.4` image.
 
-**Docker**
 ```
-$ docker image rm alpine:3.15.4
-```
-
-**Buildah**
-```
-$ buildah rmi alpine:3.15.4 
-```
-
-**Podman**
-```
-$ podman image rm alpine:3.15.4
+buildah rmi alpine:3.15.4 
+docker image rm alpine:3.15.4
+podman image rm alpine:3.15.4
 ```
 
 ### Task 9
 
 Build a new image called `ckad:ps3` using `buildfile.ckad` in the `dev/buildfiles` folder and using the app in the `dev/ckad` folder. Tag it so it can be pushed to the `ckad-dev` repo in the `internal-reg.io` registry.
 
-**Docker**
 ```
-$ docker image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
+buildah build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
+docker image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
+podman image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
 ```
-
-**Buildah**
-```
-$ buildah build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
-```
-
-**Podman**
-```
-$ docker image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
-```
-
