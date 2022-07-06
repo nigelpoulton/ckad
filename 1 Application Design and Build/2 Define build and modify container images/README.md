@@ -37,9 +37,9 @@ $ buildah --help | buildah <command> --help
 $ podman --help | podman <command> --help
 ```
 
-You're encouraged to work things out yourself, even if you use the internet. However, the only websites you can use in the exam are `kubernetes.io` and `helm.sh`.
+You're encouraged to work things out yourself, even if you use the internet. However, the only websites you can use in the exam are `kubernetes.io/docs`, `kubernetes.io/blog`, `github.com/kubernetes` and `helm.sh`.
 
-Answers to each task can be found in the `answers.md` file, but 
+Answers to each task can be found in the `answers.md` file.
 
 ### Task 1
 
@@ -57,7 +57,7 @@ Download a local copy of the official `alpine` image with the `3.15.4` tag.
 
 **This task can only be completed if you have uccessfully completed Task 2.**
 
-Create a tarball called `ckad-ps2.tar` from the local `ckad:ps2` image.
+Create an OCI archive as a tarball called `ckad-ps2.tar` from the local `ckad:ps2` image.
 
 ### Task 5
 
@@ -68,3 +68,14 @@ Delete the local `alpine:3.15.4` image.
 ### Task 6
 
 Build a new image called `ckad:ps3` using `buildfile.ckad` in the `dev/buildfiles` folder and using the app in the `dev/ckad` folder. Tag it so it can be pushed to the `ckad-dev` repo in the `internal-reg.io` registry.
+
+### Clean-up
+
+The following commands will delete the images and other artefacts created during the tasks. Feel free to use Podman instead of Docker.
+
+```
+docker image rm ckad:ps1
+docker image rm internal-reg.io/dev/fe/ckad:ps2
+docker image rm internal-reg.io/ckad-dev/ckad:ps3
+rm ckad-ps2.tar
+```
