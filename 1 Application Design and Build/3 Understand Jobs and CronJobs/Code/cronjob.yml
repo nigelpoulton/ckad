@@ -1,0 +1,23 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: ckad-cron1
+spec:
+  schedule: "* * * * *"
+  startingDeadlineSeconds: 30
+  concurrencyPolicy: Allow
+  successfulJobsHistoryLimit: 5
+  failedJobsHistoryLimit: 2
+  jobTemplate:
+    spec:
+      template: 
+        spec:
+          containers:
+          - name: ckad-ctr
+            image: alpine:latest
+            imagePullPolicy: Always
+            command:
+            - /bin/sh
+            - -c
+            - echo "Let's smash the CKAD"; sleep 600
+          restartPolicy: OnFailure
