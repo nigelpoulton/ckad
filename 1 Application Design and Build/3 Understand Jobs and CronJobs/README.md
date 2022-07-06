@@ -53,7 +53,7 @@ Reconfigure the Job defined in `parallel.yml` so that the Job controller will st
 
 ### Task 3
 
-Reconfigure the Job defined in `parallel.yml` so that the job will be pterminated if it's still running after 45 seconds. 
+Reconfigure the Job defined in `parallel.yml` so that the job will be terminated if it's still running after 45 seconds. 
 
 Re-deploy the Job and ensure the updated configuration terminates the Job after 45 seconds.
 
