@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volpod
+spec:
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: pvc-wait
+  containers:
+  - name: ctr
+    image: alpine:latest
+    command:
+    - /bin/sh
+    - "-c"
+    - "sleep 60m"
+    volumeMounts:
+    - mountPath: /data
+      name: data

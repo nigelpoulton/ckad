@@ -1,0 +1,63 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ckad
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: pluralsight
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pvc2
+  namespace: ckad
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 15Gi
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: app1
+  namespace: pluralsight
+spec:
+  volumes:
+  - name: vol1
+    persistentVolumeClaim:
+      claimName: pvc2
+  containers:
+  - name: ctr
+    image: alpine:latest
+    command:
+    - /bin/sh
+    - "-c"
+    - "sleep 60m"
+    volumeMounts:
+    - mountPath: /data
+      name: vol1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volpod
+  namespace: ckad
+spec:
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: pvc1
+  containers:
+  - name: ctr
+    image: alpine:latest
+    command:
+    - /bin/sh
+    - "-c"
+    - "sleep 60m"
+    volumeMounts:
+    - mountPath: /data
+      name: data

@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: volpod
+  namespace: ckad
+spec:
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: pvc1
+  containers:
+  - name: ctr
+    image: alpine:latest
+    command:
+    - /bin/sh
+    - "-c"
+    - "sleep 60m"
+    volumeMounts:
+    - mountPath: /data
+      name: data
