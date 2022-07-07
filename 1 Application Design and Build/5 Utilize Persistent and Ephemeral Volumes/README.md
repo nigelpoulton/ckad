@@ -39,16 +39,7 @@ Answers to each task can be found in the `answers.md` file.
 
 ## Tasks
 
-**It is vital you run these two commands to setup the lab environment before continuing with the tasks.**
-
-If you haven't already done so, run the following command to create the `ckad` and `pluralsight` Namespaces.
-
-```
-kubectl create ns ckad
-kubectl create ns pluralsight
-```
-
-Run the following command to Configure the lab environment. The Pods will get stuck in the pending phase. This is expected.
+**It is vital you run this command to setup the lab environment before continuing with the tasks.** The Pods will get stuck in the pending phase. This is expected.
 
 ```
 kubectl apply -f lab-setup.yml
