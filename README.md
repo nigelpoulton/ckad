@@ -9,7 +9,7 @@ The repo is orgainsed as follows:
 
 ## Pull requests
 
-I **won't** be accept PRs for additional content. This is because the content relates to the Pluralsight video courses.
+I **won't** accept PRs for additional content. This is because the content relates to the Pluralsight video courses.
 
 I **will** accept PRs for typos and other errata.
 

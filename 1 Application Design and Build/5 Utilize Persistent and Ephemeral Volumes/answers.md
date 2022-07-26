@@ -76,7 +76,7 @@ kubectl describe pod volpod
 Deploy the missing PVC from the `pvc.yml` file with the following command. Be sure to run it form the `1 Application Design and Build/5 Utilize Persistent and Ephemeral Volumes` directory.
 
 ```
-kubectl apply -f pvc .yml
+kubectl apply -f pvc.yml
 ```
 
 Verify that the Pod now starts with the following command.
