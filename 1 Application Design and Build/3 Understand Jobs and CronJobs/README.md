@@ -69,7 +69,7 @@ Remember to only use the `kubernetes.io` website if you need help.
 
 ### Task 5
 
-Reconfigure the CronJob defined in `scheduled.yml` so that new Pods new Pods will not start if existing ones are still running.
+Reconfigure the CronJob defined in `scheduled.yml` so that new Pods will not start if existing ones are still running.
 
 Re-deploy the updated configuration.
 
