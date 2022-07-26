@@ -59,7 +59,7 @@ When resolved, the Pod should start.
 
 **Answer**
 
-The Pod is stuck in the pending phase because it's configured to use a volume based on a PVC called `pvc-wait`. However, the PVC does not exist. You need to create the PVC so the Pod can start.
+The Pod is stuck in the pending phase because it's configured to use a volume based on a PVC called `pvc1`. However, the PVC does not exist. You need to create the PVC so the Pod can start.
 
 Run the following command to set your context to work in the `ckad` Namespace.
 
