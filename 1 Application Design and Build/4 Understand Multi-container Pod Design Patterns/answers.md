@@ -101,5 +101,5 @@ kubectl apply -f db-deploy.yml
 The following command will show that both containers are running together in the same Pod. Besure to substitute the name of the Pod in your environment.
 
 ```
-kubectl logs <pod-name> -c check-db
+kubectl get pods <pod-name>
 ```
