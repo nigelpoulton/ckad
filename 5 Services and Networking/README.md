@@ -26,7 +26,9 @@ The following commands will build a local K8s cluster that supports NetworkPolic
 - If it stops working in the future, I won't be prividing fixes
 
 
-`k3d cluster create netpol --k3s-arg "--flannel-backend=none@all:*" --k3s-arg "--disable-network-policy@all:*" --k3s-arg " --disable=traefik@all:*"  --k3s-arg "--cluster-cidr=192.168.0.0/16@all:*"  --k3s-arg "--tls-san=0.0.0.0@all:*"`
+```
+k3d cluster create netpol --k3s-arg "--flannel-backend=none@all:*" --k3s-arg "--disable-network-policy@all:*" --k3s-arg " --disable=traefik@all:*"  --k3s-arg "--cluster-cidr=192.168.0.0/16@all:*"  --k3s-arg "--tls-san=0.0.0.0@all:*"
+```
 
 `kubectl apply -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml`
 
