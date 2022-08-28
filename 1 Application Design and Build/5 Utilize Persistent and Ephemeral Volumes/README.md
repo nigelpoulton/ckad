@@ -76,5 +76,5 @@ When the issue is resolved the Pod should enter the running phase.
 The following comands will cleanup any Jobs and CronJobs from these tasks. Be sure to run the commands from the `1 Application Design and Build/5 Utilize Persistent and Ephemeral Volumes` directory.
 
 ```
-kubectl delete -f sc.yml lab-setup.yml
+kubectl delete -f sc.yml -f lab-setup.yml
 ```

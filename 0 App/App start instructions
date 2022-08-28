@@ -8,7 +8,7 @@ Build local images (backend, frontend)
     docker image build -t pluralsight_backend:latest ./djackets_django
     docker image build -t pluralsight_vue:latest ./djackets_vue
 
-INSTALL NGINC INGRESS CONTROLLER
+INSTALL NGINX INGRESS CONTROLLER
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml
 
 >>>>>>>>Bring up DB
@@ -17,7 +17,7 @@ kubectl apply -f ./kubernetes/db/config.yaml \
   -f ./kubernetes/db/deployment.yaml \
   -f ./kubernetes/db/statefulset.yaml
     
->>>>>>>>Bring up Backend
+>>>>>>>>Bring up backend
 kubectl apply -f ./kubernetes/backend/deployment.yaml \
   -f ./kubernetes/backend/service.yaml
 

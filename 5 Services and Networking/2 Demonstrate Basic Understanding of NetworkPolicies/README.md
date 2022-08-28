@@ -46,7 +46,7 @@ kubectl create namespace ps
 
 ### Task 1
 
-You have an app with front-end and beck-end services. The front-end Pods are configured with the `app=fe` label and the back-end Pods are configured with the `app=be` label.
+You have an app with front-end and back-end services. The front-end Pods are configured with the `app=fe` label and the back-end Pods are configured with the `app=be` label.
 
 **Task**
 
