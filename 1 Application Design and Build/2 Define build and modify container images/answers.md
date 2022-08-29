@@ -81,14 +81,14 @@ podman image rm ckad:pluralsight
 
 **Question**
 
-Build an OCI container image using the `Dockerfile.dev` build file. Make sure the image is tagged as `ckad:ps1'.
+Build an OCI container image using the `Dockerfile.dev` build file. Make sure the image is tagged as `ckad:ps1'.  Run from the App2 directory.
 
 **Answer**
 
 ```
-buildah build -t ckad:ps1 -f Dockerfile.dev
-docker image build -t ckad:ps1 -f Dockerfile.dev .
-podman image build -t ckad:ps1 -f Dockerfile.dev .
+buildah build -t ckad:ps1 -f ../Buildfiles/Dockerfile.dev
+docker image build -t ckad:ps1 -f ../Buildfiles/Dockerfile.dev .
+podman image build -t ckad:ps1 -f ../Buildfiles/Dockerfile.dev .
 ```
 
 ### Task 5
