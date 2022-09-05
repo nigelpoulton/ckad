@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: blue-test-service
+  labels:
+    env: blue
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+    role: blue
+  ports:
+    - port: 9000
+      targetPort: 80

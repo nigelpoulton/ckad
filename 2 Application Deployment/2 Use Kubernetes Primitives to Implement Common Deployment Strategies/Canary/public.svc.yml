@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: public-service
+  labels:
+    env: prod
+spec:
+  type: LoadBalancer
+  selector:
+    app: customer-app
+  ports:
+    - port: 80
+      targetPort: 80

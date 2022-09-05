@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stable-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: customer-app
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: customer-app
+        track: stable
+    spec:
+      containers:
+      - name: stable
+        image: ckad:stable
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "128Mi" # 128 MB
+            cpu: "200m" # 200 millicpu (.2 cpu or 20% of the cpu)
