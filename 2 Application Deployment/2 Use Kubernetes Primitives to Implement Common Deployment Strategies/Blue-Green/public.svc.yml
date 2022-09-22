@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: public-service
+  labels:
+    env: prod
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+    role: blue
+  ports:
+    - port: 80
+      targetPort: 80

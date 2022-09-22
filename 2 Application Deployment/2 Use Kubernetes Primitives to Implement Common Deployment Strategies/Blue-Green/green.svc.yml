@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: green-test-service
+  labels:
+    env: green
+spec:
+  type: LoadBalancer
+  selector:
+    app: nginx
+    role: green
+  ports:
+    - port: 9001
+      targetPort: 80
