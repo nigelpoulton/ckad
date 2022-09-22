@@ -48,7 +48,7 @@ Your environment has two Services deployed and waiting for Pods.
 
 **Task**
 
-Create and deploy an Ingress object called `app.com.` Configure it to route HTTP traffic to the two Services. Traffic arriving on the path `web.app.com` should be sent to the `frontend` Service and traffic arriving on the path `admin.app.com` should be sent to the `frontend` Service.
+Create and deploy an Ingress object called `app.com.` Configure it to route HTTP traffic to the two Services. Traffic arriving on the path `web.app.com` should be sent to the `frontend` Service and traffic arriving on the path `admin.app.com` should be sent to the `backend` Service.
 
 
 ### Clean up
