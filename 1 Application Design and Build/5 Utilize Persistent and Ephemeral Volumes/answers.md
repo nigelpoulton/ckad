@@ -59,7 +59,7 @@ When resolved, the Pod should start.
 
 **Answer**
 
-The Pod is stuck in the pending phase because it's configured to use a volume based on a PVC called `pvc-wait`. However, the PVC does not exist. You need to create the PVC so the Pod can start.
+The Pod is stuck in the pending phase because it's configured to use a volume based on a PVC called `pvc1`. However, the PVC does not exist. You need to create the PVC so the Pod can start.
 
 Run the following command to set your context to work in the `ckad` Namespace.
 
@@ -76,7 +76,7 @@ kubectl describe pod volpod
 Deploy the missing PVC from the `pvc.yml` file with the following command. Be sure to run it form the `1 Application Design and Build/5 Utilize Persistent and Ephemeral Volumes` directory.
 
 ```
-kubectl apply -f pvc .yml
+kubectl apply -f pvc.yml
 ```
 
 Verify that the Pod now starts with the following command.

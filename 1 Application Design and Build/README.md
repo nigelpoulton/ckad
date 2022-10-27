@@ -1,3 +1,5 @@
+# Readme
+
 This course has the following 4 modules:
 
 2. Define, build and modify container images
@@ -9,10 +11,10 @@ There's no item "1." in the list because of the way lessons are numbered interna
 
 ## Test yourself tasks
 
-Each module has its own `tasks` folder containing exam-like tasks for you to complete.
+Each module folder contains all tasks, answers to tasks, and accompanying code.
 
 ## Code
 
-A module m ay have a `code` folder for any code accompanying that module. Not all module have accompanying code.
+Some modules have a `code` folder for any code accompanying that module. Not all modules have accompanying code.
 
 

@@ -86,9 +86,9 @@ Build an OCI container image using the `Dockerfile.dev` build file. Make sure th
 **Answer**
 
 ```
-buildah build -t ckad:ps1 -f Dockerfile.dev
-docker image build -t ckad:ps1 -f Dockerfile.dev .
-podman image build -t ckad:ps1 -f Dockerfile.dev .
+buildah build -t ckad:ps1 -f ./Buildfiles/Dockerfile.dev ./App2
+docker image build -t ckad:ps1 -f ./Buildfiles/Dockerfile.dev ./App2
+podman image build -t ckad:ps1 -f ./Buildfiles/Dockerfile.dev ./App2
 ```
 
 ### Task 5
@@ -96,9 +96,9 @@ podman image build -t ckad:ps1 -f Dockerfile.dev .
 Build an image called `ckad:ps2` using the default `Dockerfile` and tag it so it can be pushed to the `dev-fe` repo in the `internal-reg.io` registry.
 
 ```
-buildah build -t internal-reg.io/dev-fe/ckad:ps2 
-docker image build -t internal-reg.io/dev-fe/ckad:ps2 .
-podman image build -t internal-reg.io/dev-fe/ckad:ps2 .
+buildah build -t internal-reg.io/dev-fe/ckad:ps2 -f ./Buildfiles/Dockerfile ./App2
+docker image build -t internal-reg.io/dev-fe/ckad:ps2 -f ./Buildfiles/Dockerfile ./App2
+podman image build -t internal-reg.io/dev-fe/ckad:ps2 -f ./Buildfiles/Dockerfile ./App2
 ```
 
 ### Task 6
@@ -136,10 +136,10 @@ podman image rm alpine:3.15.4
 
 ### Task 9
 
-Build a new image called `ckad:ps3` using `buildfile.ckad` in the `dev/buildfiles` folder and using the app in the `dev/ckad` folder. Tag it so it can be pushed to the `ckad-dev` repo in the `internal-reg.io` registry.
+Build a new image called `ckad:ps3` using `buildfile.ckad` in the `Buildfiles` folder and using the app in the `dev/ckad` folder. Tag it so it can be pushed to the `ckad-dev` repo in the `internal-reg.io` registry.
 
 ```
-buildah build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
-docker image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
-podman image build -t internal-reg.io/ckad-dev/ckad:ps3 -f dev/buildfiles/buildfile.ckad dev/ckad
+buildah build -t internal-reg.io/ckad-dev/ckad:ps3 -f ./Buildfiles/buildfile.ckad ./dev/ckad
+docker image build -t internal-reg.io/ckad-dev/ckad:ps3 -f ./Buildfiles/buildfile.ckad ./dev/ckad
+podman image build -t internal-reg.io/ckad-dev/ckad:ps3 -f ./Buildfiles/buildfile.ckad ./dev/ckad
 ```
