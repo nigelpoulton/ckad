@@ -35,6 +35,45 @@ k get pods
 k exec -it kube-apiserver-master -n kube-system -- kube-apiserver -h | grep enable-admission-plugins
 ```
 
-
 ### Task 2
+
+This uses the `dev` namespace so create it using `kubectl create ns dev`.
+
+1. Display the Kubernetes major and minor versions.
+
+```bash
+k config set-context --current --namespace=dev
+k version -o yaml
+```
+
+2. Display all API groups and versions for the cluster. Sort by kind.
+
+```bash
+k api-resources --sort-by=kind
+```
+
+3. Display the API group and version for ingresses.
+
+```bash
+k explain ingresses
+```
+
+4. Display available versions for the autoscaling API group.
+
+```bash
+k api-versions | grep autoscaling
+```
+
+5. Display the preferred version for the autoscaling API group.
+
+```bash
+k proxy 8001 & curl localhost:8001/apis/autoscaling
+```
+
+6. List any alpha versions enabled on the cluster.
+
+```bash
+# Note that you may need to run sudo
+cat /etc/kubernetes/manifests/kube-apiserver.yaml | grep runtime-config
+```
 

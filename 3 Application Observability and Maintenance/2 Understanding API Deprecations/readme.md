@@ -60,3 +60,14 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 ### Task 2
 
+1. Display the Kubernetes major and minor versions.
+
+2. Display all API groups and versions for the cluster. Sort by kind.
+
+3. Display the API group and version for ingresses.
+
+4. Display available versions for the autoscaling API group.
+
+5. Display the preferred version for the autoscaling API group.
+
+6. List any alpha versions enabled on the cluster.
