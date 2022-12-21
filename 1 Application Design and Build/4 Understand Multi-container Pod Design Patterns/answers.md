@@ -25,7 +25,7 @@ Add the following block to the `.spec.template.spec` section of the `be-deploy.y
 
 ```
       initContainers:
-      - name: check-db-ready
+      - name: check-db
         image: postgres:9.6.5
         command: ['sh', '-c', 
           'until pg_isready -h postgres -p 5432; 
