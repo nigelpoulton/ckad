@@ -10,7 +10,7 @@ The following lists each question and associated answer.
   k create ns dev
   ```
 
-2. Use Helm to add a repo named `bitnami` located at `http://chart.bitnami.com/bitnami`.
+2. Use Helm to add a repo named `bitnami` located at `https://charts.bitnami.com/bitnami`.
 
   ```
   helm repo add bitnami https://charts.bitnami.com/bitnami
@@ -64,7 +64,7 @@ The following lists each question and associated answer.
 
   ```
   cd wordpress
-  cat chart.yaml
+  cat Chart.yaml
   ```
 
 3. View the `wordpress` `15.0.9` chart values using Helm.
@@ -83,7 +83,7 @@ The following lists each question and associated answer.
     wordpressLastName: Doe 
     wordpressBlogName: admin.com 
     service: 
-    type: LoadBalancer
+      type: LoadBalancer
     ```
 
     ```
@@ -94,7 +94,7 @@ The following lists each question and associated answer.
 5. Install version `15.0.9` of the wordpress chart into the `dev` namespace and pass the values from the `wordpress-values.yml` file.
 
   ```
-  helm install wordpress bitnami/wordpress --values=wordpress-values.yaml --namespace dev --version 15.0.19
+  helm install wordpress bitnami/wordpress --values=wordpress-values.yaml --namespace dev --version 15.0.9
   ```
 
 6. List the running Pods.
