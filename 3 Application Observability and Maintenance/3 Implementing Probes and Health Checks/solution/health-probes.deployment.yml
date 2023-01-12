@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: health-probes
+      app: health-probes-deployment
   template:
     metadata:
       labels:
-        app: health-probes
+        app: health-probes-deployment
     spec:
       containers:
       - name: health-probes
