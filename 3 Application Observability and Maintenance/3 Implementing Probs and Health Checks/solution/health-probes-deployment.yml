@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: health-probes
+  name: health-probes-deployment
 spec:
   replicas: 1
   selector:

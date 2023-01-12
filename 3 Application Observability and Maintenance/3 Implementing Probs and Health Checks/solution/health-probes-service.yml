@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: health-probes
+  name: health-probes-service
 spec:
   type: LoadBalancer
   selector:

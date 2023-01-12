@@ -4,11 +4,14 @@ The following lists each question and associated answer.
 
 ### Task 1
 
-1. Build the `Dockerfile` located at `3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes` directory. Name the image `health-probes`. 
+1. Build the `Dockerfile` located at `3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes` directory. Name the image `health-probes`. The application exposes a `healthz` endpoint that can be used for health checks.
 
-2. Create a new deployment named `health-probes` with the following properties:
-    - Template should have a label value of `app: health-probes`.
-    - Use the `health-probes` image.
-    - Has an `imagePullPolicy` value of `IfNotPresent`.
+2. Create a new `health-probes-deployment.yml` file with the following properties:
+    - The deployment `template` has an `app: health-probes` label.
+    - `image: health-probes`
+    - `imagePullPolicy: IfNotPresent`
+    - `readinessProbe` and `livenessProbe` that both use `httpGet` to call a `/healthz` path on `port` 80.
 
-3. Create a `LoadBalancer` service named `health-probes` that has a `targetPort` and `port` of `80`. The `selector` should match `app: health-probes`.
+3. View the pod's events and see if any readiness or liveness probe errors are displayed.
+
+4. Ensure that the pod's `restarts` value is at `0`. 
