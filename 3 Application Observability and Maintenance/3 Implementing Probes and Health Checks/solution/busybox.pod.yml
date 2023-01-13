@@ -1,12 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  labels:
-    test: liveness
-  name: liveness-probe
+  name: busybox-probes
 spec:
   containers:
-  - name: liveness
+  - name: busybox-probes
     image: k8s.gcr.io/busybox
     resources:
       limits:
@@ -15,7 +13,7 @@ spec:
     args:
     - /bin/sh
     - -c
-    - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 600
+    - touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 120
     startupProbe:
       exec:
         command:

@@ -26,6 +26,7 @@ spec:
           httpGet:
             path: /healthz
             port: 80
+            periodSeconds: 5
         resources:
           limits:
             memory: "128Mi" #128 MB
