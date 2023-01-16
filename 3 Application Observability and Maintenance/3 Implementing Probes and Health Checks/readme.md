@@ -52,11 +52,11 @@ Answers to the question tasks can be found in the `answers.md` file.
 1. Build the `Dockerfile` located in the `health-probes` directory. Name the image `health-probes`. The application exposes a `healthz` endpoint that can be used for health checks.
 
 2. Create a new `health-probes-deployment.yml` file with the following features:
-    - Name: health-probes-deployment
-    - Image: health-probes
-    - Image pull policy: IfNotPresent
-    - Readiness probe: Use HTTP to call a `/healthz` endpoint on port `80`
-    - Liveness probe: Use HTTP to call a `/healthz` endpoint on port `80` and verify that the app is up and running every 5 seconds.
+    - `Name`: health-probes-deployment
+    - `Image`: health-probes
+    - `Image pull policy`: IfNotPresent
+    - `Readiness probe`: Use HTTP to call a `/healthz` endpoint on port `80`
+    - `Liveness probe`: Use HTTP to call a `/healthz` endpoint on port `80` and verify that the app is up and running every 5 seconds.
 
 3. Deploy `health-probes-deployment.yml` to Kubernetes.
 
@@ -67,11 +67,11 @@ Answers to the question tasks can be found in the `answers.md` file.
 ### Task 2
 
 1. Create a new `busy-box.pod.yml` file with the following features:
-    - Name: busybox-probes
-    - Image: k8s.gcr.io/busybox
-    - Args: /bin/sh -c touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 120
-    - Readiness probe: Execute the command `cat /tmp/healthy`. Add a failure threshold value of `30` and a period seconds value of `10`.
-    - Liveness probe: Execute the command `cat /tmp/healthy`. Add an initial delay value of `5` seconds and a period seconds value of `5`.
+    - `Name`: busybox-probes
+    - `Image`: k8s.gcr.io/busybox
+    - `Args`: /bin/sh -c touch /tmp/healthy; sleep 30; rm -rf /tmp/healthy; sleep 120
+    - `Readiness probe`: Execute the command `cat /tmp/healthy`. Add a failure threshold value of `30` and a period seconds value of `10`.
+    - `Liveness probe`: Execute the command `cat /tmp/healthy`. Add an initial delay value of `5` seconds and a period seconds value of `5`.
 
 2. Deploy `busy-box.pod.yml` to Kubernetes.
 
