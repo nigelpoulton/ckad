@@ -26,19 +26,19 @@ You can have any of the following tools installed for use.
 If you haven't already done so, clone the repo with the following command.
 
 ```
-$ git clone https://github.com/nigelpoulton/ckad.git
+git clone https://github.com/nigelpoulton/ckad.git
 ```
 
 Run the following command to change into the correct directory. The tasks expect your terminal to be in this directory. If it isn't, the answers won't work.
 
 ```
-$ cd ckad/1\ Application\ Design\ and\ Build/2\ Define\ build\ and\ modify\ container\ images/
+cd ckad/1\ Application\ Design\ and\ Build/2\ Define\ build\ and\ modify\ container\ images/
 ```
 
 **NOTE:** This will set a very long working directory. If this bothers you (it bothers me) you can tell Linux just to display your current directory without the path by running this command. It will only change your prompt for your current shell session.
 
 ```
-$ PS1="\W\$ "
+PS1="\W\$ "
 ```
 
 ## Answers
