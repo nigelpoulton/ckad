@@ -11,7 +11,7 @@ The following restrictions will help emulate exam conditions.
 - Do not refer to any other notes
 - Do not make any hand-written notes
 
-The full list of exam requirements and restrictions can be found [here](https://docs.linuxfoundation.org/tc-docs/certification/lf-candidate-handbook/exam-rules-and-policies).
+The full list of exam requirements and restrictions can be found [here](https://docs.linuxfoundation.org/tc-docs/certification/lf-handbook2/exam-rules-and-policies).
 
 ## Pre-requisites
 
