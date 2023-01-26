@@ -49,3 +49,15 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 ### Task 1
 
+1. Ensure that Metrics Server is installed and running.
+
+2. Create 10 nginx pods.
+
+3. Create a NodePort service for the Pods on port 80.
+
+4. Run a curl command against the Pods multiple times to generate traffic.
+
+5. View CPU and memory information for the Nodes and Pods.
+
+6. Get a raw view of the Nodes' CPU/memory.
+
