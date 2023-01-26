@@ -59,5 +59,5 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 5. View CPU and memory information for the Nodes and Pods.
 
-6. Get a raw view of the Nodes' CPU/memory.
+6. Get a raw view of a Node's CPU/memory.
 

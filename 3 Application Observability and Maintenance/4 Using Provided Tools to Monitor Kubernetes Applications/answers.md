@@ -37,7 +37,7 @@ The following lists each question and associated answer.
     k top pods
     ```
 
-6. Get a raw view of the Nodes' CPU/memory.
+6. Get a raw view of a Node's CPU/memory.
 
     ```
     kubectl get --raw /api/v1/nodes/[node-name]/proxy/metrics/resource
