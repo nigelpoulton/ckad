@@ -51,7 +51,7 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 1. Create a namespace named `dev` in Kubernetes.
 
-2. Use Helm to add a repo named `bitnami` located at `http://chart.bitnami.com/bitnami`.
+2. Use Helm to add a repo named `bitnami` located at `https://charts.bitnami.com/bitnami`.
 
 3. List all Helm repos and ensure `bitnami` appears.
 
