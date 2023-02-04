@@ -108,7 +108,7 @@ Download a local copy of the official `alpine` image with the `3.15.4` tag.
 ```
 buildah pull alpine:3.15.4
 docker image pull alpine:3.15.4
-docker image pull alpine:3.15.4
+podman image pull alpine:3.15.4
 ```
 
 ### Task 7
