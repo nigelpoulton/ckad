@@ -37,7 +37,7 @@ The following lists each question and associated answer.
 
     ```
 
-1. List the names of the containers in the Pods.
+1. List the names of the containers in the Pod.
 
     ```
     k get pods counter -o jsonpath='{.spec.containers[*].name}'

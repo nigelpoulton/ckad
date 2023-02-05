@@ -4,7 +4,7 @@
 
 1. List the ready state for each of the Pod's containers.
 
-1. List the names of the containers in the Pods.
+1. List the names of the containers in the Pod.
 
 1. List the log entries for all containers in the Pod that have occurred in the last 60 seconds.
 
