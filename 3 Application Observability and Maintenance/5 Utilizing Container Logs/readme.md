@@ -47,7 +47,7 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 ## Questions
 
-### Task 1
+### Task
 
 1. Deploy a Pod named `counter` using the provided `pod-logging.yaml` file. Deploy the Pod into the `dev` namespace.
 
@@ -59,3 +59,4 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 1. Follow the log entries for all containers in the Pod.
 
+1. Delete the `counter` Pod.

@@ -55,3 +55,9 @@ The following lists each question and associated answer.
     ```
     k logs counter -f --all-containers
     ```
+
+1. Delete the `counter` Pod.
+
+    ```
+    k delete pod counter
+    ```
