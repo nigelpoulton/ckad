@@ -61,4 +61,4 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 6. Exit out of the container.
 
-7. Delete the busyapp Pod and the Pod copy.
+7. List the Pods and then delete them.
