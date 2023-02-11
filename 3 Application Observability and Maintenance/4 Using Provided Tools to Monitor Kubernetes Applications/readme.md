@@ -32,7 +32,7 @@ $ git clone https://github.com/nigelpoulton/ckad.git
 Run the following command to change into the correct directory. The tasks expect your terminal to be in this directory. If it isn't, the answers won't work.
 
 ```
-$ cd ckad/3\ Application\ Observability\ and\ Maintenance/2\ Understanding\ API\ Deprecations/
+$ cd ckad/3\ Application\ Observability\ and\ Maintenance/4\ Using\ Provided\ Tools\ to\ Monitor\ Kubernetes\ Applications/
 ```
 
 **NOTE:** This will set a very long working directory. If this bothers you (it bothers me) you can tell Linux to display your current directory without the path by running this command. It will only change your prompt for your current shell session.
