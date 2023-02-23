@@ -25,7 +25,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: sc1
-provisioner: <insert-your-stoarge-plugin-name>
+provisioner: <insert-your-storage-plugin-name>
 reclaimPolicy: Retain
 allowVolumeExpansion: true
 volumeBindingMode: Immediate

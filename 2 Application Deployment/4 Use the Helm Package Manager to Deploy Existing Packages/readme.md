@@ -51,7 +51,7 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 1. Create a namespace named `dev` in Kubernetes.
 
-2. Use Helm to add a repo named `bitnami` located at `http://chart.bitnami.com/bitnami`.
+2. Use Helm to add a repo named `bitnami` located at `https://charts.bitnami.com/bitnami`.
 
 3. List all Helm repos and ensure `bitnami` appears.
 
@@ -69,7 +69,7 @@ Answers to the question tasks can be found in the `answers.md` file.
 
 1. Use Helm to pull the `bitnami/wordpress` version `15.0.9` chart and untar it in the current folder.
 
-2. Open the `chart.yaml` file in the new `wordpress` folder and note the dependencies.
+2. Open the `Chart.yaml` file in the new `wordpress` folder and note the dependencies.
 
 3. View the `wordpress` `15.0.9` chart values using Helm.
 
@@ -83,7 +83,7 @@ Answers to the question tasks can be found in the `answers.md` file.
     wordpressLastName: Doe 
     wordpressBlogName: admin.com 
     service: 
-    type: LoadBalancer
+      type: LoadBalancer
     ```
 
 5. Install version `15.0.9` of the wordpress chart into the `dev` namespace and pass the values from the `wordpress-values.yml` file.

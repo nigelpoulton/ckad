@@ -53,7 +53,7 @@ command: ['sh', '-c',
   do echo waiting for database; sleep 2; done;']
 ```
 
-Deploy the Deployment and confirm the main app container does not sart.
+Deploy the Deployment and confirm the main app container does not start.
 
 
 ### Task 2
