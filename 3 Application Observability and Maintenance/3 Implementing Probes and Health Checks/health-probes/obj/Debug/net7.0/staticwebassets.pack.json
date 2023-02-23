@@ -1,0 +1,165 @@
+{
+  "Files": [
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Volumes/KINGSTON/Dropbox/Projects/GitHub/Courses/ckad/3 Application Observability and Maintenance/3 Implementing Probs and Health Checks/health-probes/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.health-probes.props",
+      "PackagePath": "build\\health-probes.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.health-probes.props",
+      "PackagePath": "buildMultiTargeting\\health-probes.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.health-probes.props",
+      "PackagePath": "buildTransitive\\health-probes.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.health-probes.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

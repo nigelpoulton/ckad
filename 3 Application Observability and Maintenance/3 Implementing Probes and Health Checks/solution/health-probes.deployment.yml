@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: health-probes-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: health-probes-deployment
+  template:
+    metadata:
+      labels:
+        app: health-probes-deployment
+    spec:
+      containers:
+      - name: health-probes
+        image: health-probes
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 80
+          periodSeconds: 5
+        resources:
+          limits:
+            memory: "128Mi" #128 MB
+            cpu: "200m" #200 millicpu (.2 cpu or 20% of the cpu)
