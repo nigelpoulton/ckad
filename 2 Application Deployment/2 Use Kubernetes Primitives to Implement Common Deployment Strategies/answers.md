@@ -34,6 +34,8 @@ curl http://localhost:<node-port-value>
 
 ### Task 2
 
+**IMPORTANT:** This task assumes that you have images named `ckad:blue` and `ckad:green` available on your system. To create them, go to the `Blue-Green/Build` folder and run `docker-compose build` to create the images.
+
 The current folder contains Kubernetes YAML files to create Blue/Green deployments and services. Images you'll use are also available on the system. View the files in the current folder using:
 
 `ls -l`
@@ -66,6 +68,8 @@ The current folder contains Kubernetes YAML files to create Blue/Green deploymen
   ```
 
 ### Task 3
+
+**IMPORTANT:** This task assumes that you have images named `ckad:stable` and `ckad:canary` available on your system. To create them, go to the `Canary/build` folder and run `docker-compose build` to create the images.
 
 Your system has `ckad:stable` and `ckad:canary` images available and the current folder contains YAML files to be used to complete the task.
 
