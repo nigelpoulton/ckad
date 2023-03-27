@@ -1,0 +1,15 @@
+apiVersion: v1
+# Kind for kubernets ConfigMap
+kind: ConfigMap
+metadata:
+  # Name your ConfigMap
+  name: db-access
+  labels:
+    app: db
+data:
+  # User DB
+  POSTGRES_DB: postgres
+  # Db user
+  POSTGRES_USER: postgres
+  # Db password
+  POSTGRES_PASSWORD: testPassword
