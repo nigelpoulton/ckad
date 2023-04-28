@@ -49,7 +49,7 @@ The following lists each question and associated answer.
 8. Remove the `nginx-app` release.
 
   ```
-  helm uninstall nginx -n dev
+  helm uninstall nginx-app -n dev
   ```
 
 ### Task 2
