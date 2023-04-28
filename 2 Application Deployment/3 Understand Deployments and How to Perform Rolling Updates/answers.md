@@ -14,7 +14,7 @@ The following lists each question and associated answer.
 2. Create a Deployment named `web-app` that uses the `nginx:1.17.8-alpine` image and creates `6` Pods in the `dev` namespace. Add the `--save-config` flag.
 
   ```
-  k create deploy web-app --image=nginx:1.17.8-alpine --replicas=6
+  k create deploy web-app --image=nginx:1.17.8-alpine --replicas=6 --save-config
   ```
 
 3. Verify all the Pods are running.
