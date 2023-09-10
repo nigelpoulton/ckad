@@ -132,7 +132,7 @@ The following commands will delete the images and other artefacts created during
 
 ```
 docker image rm ckad:ps1
-docker image rm internal-reg.io/dev/fe/ckad:ps2
+docker image rm internal-reg.io/dev-fe/ckad:ps2
 docker image rm internal-reg.io/ckad-dev/ckad:ps3
 rm ckad-ps2.tar
 ```
