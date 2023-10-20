@@ -113,7 +113,7 @@ podman image pull alpine:3.15.4
 
 ### Task 7
 
-**This task can only be completed if you have successfully completed Task 2.**
+**This task can only be completed if you have successfully completed Task 5.**
 
 Create a tarball called `ckad-ps2.tar` from the local `ckad:ps2` image.
 
@@ -124,7 +124,7 @@ podman save internal-reg.io/dev-fe/ckad:ps2 --output ckad-ps2.tar
 
 ### Task 8
 
-**This task can only be completed if you have successfully completed Task 1.**
+**This task can only be completed if you have successfully completed Task 6.**
 
 Delete the local `alpine:3.15.4` image.
 
