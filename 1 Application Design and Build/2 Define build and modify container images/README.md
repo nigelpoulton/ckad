@@ -118,7 +118,7 @@ Create an OCI archive as a tarball called `ckad-ps2.tar` from the local `ckad:ps
 
 ### Task 8
 
-**This task can only be completed if you have successfully completed Task 4.**
+**This task can only be completed if you have successfully completed Task 6.**
 
 Delete the local `alpine:3.15.4` image.
 
