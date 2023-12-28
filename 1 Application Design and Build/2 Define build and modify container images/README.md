@@ -63,7 +63,7 @@ You must have completed the previous task before attempting this one.
 
 Convert the local `ckad:pluralsight` image into an OCI archive and compress it into a zip file called ckad-image.zip. 
 
-The command to compress the archive is `gzip > ckad-age.zip`.
+The command to compress the archive is `gzip > ckad-image.zip`.
 
 When completed successfully, you should have a new file in your current directory called `ckad-image.zip`.
 
