@@ -73,7 +73,7 @@ You must have completed Task 1 before attempting this one.
 
 The local `ckad:pluralsight` image is ready for production. Perform any tasks necessary so it can be pushed to the `nigelpoulton/ckad:prod` repository on Docker Hub.
 
-Once you've done this, delete the original `ckad:pluralsight` iamge, but do not delete the `nigelpoulton/ckad:prod` image.
+Once you've done this, delete the original `ckad:pluralsight` image, but do not delete the `nigelpoulton/ckad:prod` image.
 
 When you've completed the task, you should have the `nigelpoulton/ckad:prod` image on your local machine and the `ckad:pluralsight` should no longer be present.
 
